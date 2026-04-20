@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  background: #0a0a23;
+  color: #d1d5db;
+  font-family: 'Inter', sans-serif;
+}
+
+.topbar {
+  display: inline-block;
+  margin: 40px 0 0 80px;
+  padding: 6px 14px;
+  border: 1px solid #f472b6;
+  color: #f472b6;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.hero {
+  padding: 80px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.light {
+  color: #e5e7eb;
+}
+
+.accent {
+  color: #fca5a5;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 22px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(90deg, #ec4899, #f43f5e);
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #888;
+  color: #ccc;
+}
+
+.about {
+  display: flex;
+  padding: 80px;
+  gap: 60px;
+}
+
+.about-left {
+  flex: 2;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.section-tag {
+  color: #f472b6;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+.about h2 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.about p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info span {
+  color: #f472b6;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.card {
+  padding: 60px 80px;
+}
+
+.project {
+  margin-top: 20px;
+}
+
+.links a {
+  margin-right: 15px;
+  color: #f472b6;
+  text-decoration: none;
+}
