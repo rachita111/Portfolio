@@ -4,7 +4,7 @@ public:
         int n=nums.size(),right=0,left=0,zero=0,maxLen=0,len=0;
         while(right<n){
             if(nums[right]==0) zero++;
-            while(zero>k){
+            if(zero>k){
                 if(nums[left]==0) zero--;
                 left++;
             }
