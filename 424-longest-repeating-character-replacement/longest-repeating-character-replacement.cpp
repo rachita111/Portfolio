@@ -7,7 +7,7 @@ public:
             mpp[s[right]-'A']++;
             maxF=max(maxF,mpp[s[right]-'A']);
             int changes=(right-left+1)-maxF;
-            while(changes>k){
+            if(changes>k){
                 mpp[s[left]-'A']--;
                 maxF=0;
                 for(int i=0;i<26;i++) maxF=max(maxF,mpp[i]);
