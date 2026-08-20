@@ -10,7 +10,7 @@ public:
             if(changes>k){
                 mpp[s[left]-'A']--;
                 maxF=0;
-                for(int i=0;i<26;i++) maxF=max(maxF,mpp[i]);
+                // for(int i=0;i<26;i++) maxF=max(maxF,mpp[i]);
                 left++;
                 changes=(right-left+1)-maxF;
             }
