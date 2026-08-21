@@ -6,7 +6,7 @@ public:
         long long sum=0;
         while(right<nums.size()){
             sum+=nums[right];
-            while(sum>goal && left<nums.size()){
+            while(sum>goal){
                 sum-=nums[left];
                 left++;
             }
