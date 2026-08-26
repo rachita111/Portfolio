@@ -8,7 +8,7 @@ public:
         while(right<n){
             if(mpp[s[right]]>0) cnt++;
             mpp[s[right]]--;
-            while(left<n && cnt==m){
+            while(cnt==m){
                 if(minL>right-left+1){
                     minL=right-left+1;
                     sInd=left;
