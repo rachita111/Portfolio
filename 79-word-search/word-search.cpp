@@ -6,24 +6,24 @@ public:
         if(marked!=word[ind]) return false;
         else board[row][col]='#';
         if(ind==word.size()-1){
-            board[row][col]=marked;
+            // board[row][col]=marked;
             return true;
         }
         if(row!=0 && board[row-1][col]!='#'){
             if(helper(ind+1,row-1,col,board,word)==true){
-                board[row][col]=marked;
+                // board[row][col]=marked;
                 return true;
             }
         }
         if(row+1!=n && board[row+1][col]!='#'){
             if(helper(ind+1,row+1,col,board,word)==true){
-                board[row][col]=marked;
+                // board[row][col]=marked;
                 return true;
             }
         }
         if(col!=0 && board[row][col-1]!='#'){
             if(helper(ind+1,row,col-1,board,word)==true){
-                board[row][col]=marked;
+                // board[row][col]=marked;
                 return true;
             }
         }
