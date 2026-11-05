@@ -10,20 +10,14 @@
  * };
  */
 class Solution {
-public: 
-    void helper(TreeNode* root,vector<TreeNode*>& ans){
-        if(root==NULL) return;
-        ans.push_back(root);
-        helper(root->left,ans);
-        helper(root->right,ans);
-    }
+public:
+    TreeNode* prev=NULL;
     void flatten(TreeNode* root) {
-        vector<TreeNode*> ans;
-        helper(root,ans);
-        for(int i=1;i<ans.size();i++){
-            root->right=ans[i];
-            root->left=NULL;
-            root=root->right;
-        }
+        if(root==NULL) return;
+        flatten(root->right);
+        flatten(root->left);
+        root->right=prev;
+        root->left=NULL;
+        prev=root;
     }
 };
