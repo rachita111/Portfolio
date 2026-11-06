@@ -5,7 +5,7 @@ public:
         TreeNode* root=new TreeNode(preorder[preStrt]);
         int inRoot=inMap[root->val];
         int numsLeft=inRoot-inStrt;
-        root->left=buildTree(preorder,preStrt+1,preStrt+numsLeft,inorder,inStrt,inRoot,inMap);
+        root->left=buildTree(preorder,preStrt+1,preStrt+numsLeft,inorder,inStrt,inRoot-1,inMap);
         root->right=buildTree(preorder,preStrt+numsLeft+1,preEnd,inorder,inRoot+1,inEnd,inMap);
         return root;
     }
