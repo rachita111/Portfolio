@@ -3,7 +3,7 @@ public:
     TreeNode* buildTreePostIn(vector<int>& inorder,int is,int ie,vector<int>& postorder,int ps,int pe,map<int,int>& inMap){
         if(ps>pe || is>ie) return NULL;
         TreeNode* root=new TreeNode(postorder[pe]);
-        int inRoot=inMap[postorder[pe]];
+        int inRoot=inMap[root->val];
         int numsLeft=inRoot-is;
         root->left=buildTreePostIn(inorder,is,inRoot-1,postorder,ps,ps-1+numsLeft,inMap);
         root->right=buildTreePostIn(inorder,inRoot+1,ie,postorder,ps+numsLeft,pe-1,inMap);
